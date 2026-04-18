@@ -1,0 +1,573 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello",
+        "Good morning",
+        "Good evening",
+        "Howdy",
+        "Hi there",
+        "Hey there"
+      ],
+      "responses": [
+        "Hi! How can I help you today?",
+        "Hello there - what can I do for you?",
+        "Hey! Tell me what you need.",
+        "Hello! Ask me anything (type 'help' for examples).",
+        "Hi! What are you working on today?",
+        "Hey! How can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you",
+        "See you later",
+        "Catch you later",
+        "I need to go",
+        "Exit",
+        "Quit"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "See you later!",
+        "Bye! Come back anytime.",
+        "Take care - see you soon!",
+        "Alright, bye for now!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Appreciate it",
+        "Thx",
+        "Thanks a lot",
+        "Much appreciated"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help.",
+        "Anytime - what else can I do?",
+        "No problem at all.",
+        "Glad that helped! Want to ask another question?"
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Help",
+        "What can you do",
+        "What can you help with",
+        "How does this work",
+        "Commands",
+        "Examples",
+        "Show me examples",
+        "How to use this"
+      ],
+      "responses": [
+        "I can answer simple questions like: 'what time is it?', 'what's today's date?', 'tell me a joke', 'who are you?'",
+        "Try: 'hi', 'what time is it', 'what is today's date', 'tell me a joke', or type 'exit' to quit.",
+        "You can ask about college info (hours, courses, fees, placements) or AI/ML basics too.",
+        "Tip: Turn on 'Show matching details' in the sidebar to see intent + confidence.",
+        "Ask: 'college working hours', 'what is machine learning', or 'placement preparation'."
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "Who are you",
+        "What are you",
+        "Tell me about yourself",
+        "Are you a bot",
+        "What is this chatbot",
+        "What is this",
+        "What do you do"
+      ],
+      "responses": [
+        "I'm a beginner-friendly NLP chatbot. I use text preprocessing + TF-IDF + a Logistic Regression classifier to pick an intent and reply.",
+        "I'm a simple Python chatbot trained on patterns in intents.json using machine learning.",
+        "I'm an offline chatbot project you can showcase in interviews (intents, preprocessing, TF-IDF, classifier, confidence score).",
+        "I can answer FAQs, college info, and AI/ML questions based on my training data.",
+        "I'm not a human - I'm a small ML-based chatbot built in Python."
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "What is your name",
+        "What's your name",
+        "Tell me your name",
+        "Who am I talking to",
+        "Your name",
+        "Who is this"
+      ],
+      "responses": [
+        "You can call me NLP-Bot.",
+        "I'm NLP-Bot - nice to meet you!",
+        "NLP-Bot here. How can I help?",
+        "My name is NLP-Bot.",
+        "Call me NLP-Bot. What should we chat about?"
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "What time is it",
+        "Tell me the time",
+        "Current time",
+        "Time now",
+        "Can you tell me the time",
+        "What's the time",
+        "Time please"
+      ],
+      "responses": [
+        "Right now it's {time}.",
+        "The current time is {time}.",
+        "It's {time}.",
+        "Time now: {time}.",
+        "Sure - it's {time}."
+      ]
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "What is today's date",
+        "Today's date",
+        "What day is it",
+        "Date today",
+        "Tell me the date",
+        "What's today's date",
+        "Which day is today"
+      ],
+      "responses": [
+        "Today is {date}.",
+        "It's {date} today.",
+        "Today's date is {date}.",
+        "We are on {date}.",
+        "It's {date}."
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "Tell me a joke",
+        "Make me laugh",
+        "Say something funny",
+        "Joke",
+        "Funny",
+        "Tell me something funny",
+        "Give me a joke"
+      ],
+      "responses": [
+        "Why did the developer go broke? Because they used up all their cache.",
+        "I would tell you a UDP joke, but you might not get it.",
+        "Why do programmers prefer dark mode? Because light attracts bugs.",
+        "Why did the chatbot go to school? To improve its language model.",
+        "Debugging: being the detective in a crime movie where you are also the murderer."
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What's the weather like",
+        "Is it going to rain",
+        "Weather today",
+        "Temperature outside",
+        "How's the weather",
+        "Is it hot today"
+      ],
+      "responses": [
+        "I can't check live weather yet, but you can tell me your city and I can help you phrase a search query.",
+        "I don't have internet access for live weather in this project - but I can still chat!",
+        "I can't fetch real-time weather here. Try checking a weather app, then ask me what to wear!",
+        "If you share your city, I can suggest a simple Google query to check the weather.",
+        "This chatbot uses offline NLP, so weather is a dummy intent for now."
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "How are you",
+        "How are you doing",
+        "How's it going",
+        "Are you okay",
+        "How do you feel",
+        "How are things",
+        "You good"
+      ],
+      "responses": [
+        "I'm doing well - thanks for asking! What would you like to talk about?",
+        "All good here. How can I help you today?",
+        "Feeling helpful. Ask me anything!",
+        "I'm good! Want to ask about college info or AI/ML?",
+        "Doing great. What are you working on?"
+      ]
+    },
+    {
+      "tag": "affirmation",
+      "patterns": [
+        "Yes",
+        "Yeah",
+        "Yep",
+        "Sure",
+        "Absolutely",
+        "Sounds good",
+        "Ok",
+        "Okay",
+        "Alright",
+        "Fine"
+      ],
+      "responses": [
+        "Great - tell me what you want to do next.",
+        "Cool. What should we try now?",
+        "Nice. What's your next question?",
+        "Awesome. Go on.",
+        "Perfect. What's next?"
+      ]
+    },
+    {
+      "tag": "negation",
+      "patterns": [
+        "No",
+        "Nope",
+        "Not really",
+        "I don't think so",
+        "Don't",
+        "Nah",
+        "Not sure",
+        "No thanks"
+      ],
+      "responses": [
+        "No problem - could you tell me what you prefer instead?",
+        "Okay. What would you like to do then?",
+        "Got it. Try rephrasing your request.",
+        "Alright. What should we do instead?",
+        "Understood. Tell me what you want."
+      ]
+    },
+    {
+      "tag": "creator",
+      "patterns": [
+        "Who created you",
+        "Who made you",
+        "Who built you",
+        "Who is your developer",
+        "Who is your creator",
+        "Who designed you",
+        "Who trained you"
+      ],
+      "responses": [
+        "I was built as a Python NLP project using a small intents dataset and a simple ML model.",
+        "I'm created from code + training patterns in intents.json.",
+        "I'm built using TF-IDF + Logistic Regression to classify intents.",
+        "A developer trained me using patterns and responses from a JSON dataset.",
+        "I'm a demo chatbot project - you can extend me by adding more intents."
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "What can you do",
+        "What are your features",
+        "What are you capable of",
+        "What else can you do",
+        "Can you help me",
+        "What do you know",
+        "How can you help"
+      ],
+      "responses": [
+        "I can handle greetings, time/date, jokes, and basic Q&A using intent recognition. Try: 'help'.",
+        "I match your message to an intent using NLP, then respond with a relevant answer. Try asking for a joke!",
+        "I can answer college FAQs (hours, courses, fees, placements) and AI/ML basics based on my dataset.",
+        "Turn on debug mode to see predicted intent + confidence score.",
+        "If you want me smarter, add more patterns/responses to intents.json and restart."
+      ]
+    },
+    {
+      "tag": "college_hours",
+      "patterns": [
+        "What are the college working hours",
+        "College timings",
+        "When does college start",
+        "When does college end",
+        "What time is college open",
+        "What are class timings"
+      ],
+      "responses": [
+        "Most colleges run roughly 9 AM to 4/5 PM. If you tell me your college name, I can help you draft a message to confirm timings.",
+        "Typical working hours are around 9 AM - 5 PM, but it depends on departments and timetable.",
+        "College timings vary by semester. Check your timetable or notice board for the exact schedule.",
+        "If you share whether you're in UG or PG, I can give a more relevant timings checklist.",
+        "A safe answer: mornings to late afternoon. Want a template to ask the admin office?"
+      ]
+    },
+    {
+      "tag": "college_courses",
+      "patterns": [
+        "What courses are available",
+        "List the departments",
+        "What branches are there",
+        "What programs do you offer",
+        "Do you have computer science",
+        "Do you have AI or ML course"
+      ],
+      "responses": [
+        "Common programs include CSE, ECE, EEE, Mechanical, Civil, IT, and MBA (varies by college).",
+        "Many colleges offer UG and PG programs across engineering and management - check the official prospectus for the exact list.",
+        "Yes, CSE is common, and many colleges now include AI/ML electives or specializations.",
+        "If you tell me the college and your interest area, I can help you shortlist likely departments.",
+        "Want a checklist to compare courses (syllabus, labs, faculty, placements)?"
+      ]
+    },
+    {
+      "tag": "college_fees",
+      "patterns": [
+        "What is the fee",
+        "College fees",
+        "How much is tuition",
+        "Fee structure",
+        "Is there scholarship",
+        "Hostel fee"
+      ],
+      "responses": [
+        "Fees depend on course, category, and quota. Check the latest fee circular or official website for exact numbers.",
+        "Typical costs include tuition + exam fee + lab fee (and hostel separately if applicable).",
+        "Scholarships may exist based on merit, income, or government schemes. Want a list of documents usually required?",
+        "If you share your program (like B.Tech CSE) I can tell you what to ask the college for (fee breakdown).",
+        "Hostel fees vary by room type and mess plan. Check hostel office or website."
+      ]
+    },
+    {
+      "tag": "college_location",
+      "patterns": [
+        "Where is the college located",
+        "College address",
+        "How to reach college",
+        "College location",
+        "Nearest bus stop",
+        "Nearest railway station"
+      ],
+      "responses": [
+        "If you tell me the college name/city, I can help you with a 'how to reach' checklist.",
+        "Usually you can reach via bus/metro/auto; check Google Maps for the best route from your location.",
+        "Look for landmarks near the college and public transport options (bus stop/railway station).",
+        "Share your starting point and city, and I can suggest a route plan to search.",
+        "Want a short message template to ask the college for the exact address and directions?"
+      ]
+    },
+    {
+      "tag": "placements",
+      "patterns": [
+        "How are placements",
+        "Placement statistics",
+        "How do I prepare for placements",
+        "Placement preparation",
+        "What companies visit",
+        "How to get placed"
+      ],
+      "responses": [
+        "For placements: focus on DSA basics, projects, resume, and mock interviews. Start small and be consistent.",
+        "A good plan: 1) aptitude, 2) DSA, 3) core subjects, 4) projects, 5) resume + LinkedIn, 6) mock interviews.",
+        "Companies vary by year. Ask for last year's placement report and top recruiters list.",
+        "Build 2 strong projects (one full-stack or ML) and be ready to explain them clearly.",
+        "Want a 4-week placement prep schedule?"
+      ]
+    },
+    {
+      "tag": "ai_ml_definition",
+      "patterns": [
+        "What is machine learning",
+        "Explain machine learning",
+        "What is AI",
+        "Difference between AI and ML",
+        "What is deep learning",
+        "Explain NLP"
+      ],
+      "responses": [
+        "Machine Learning is a way for computers to learn patterns from data to make predictions or decisions.",
+        "AI is the broader goal (machines acting intelligently). ML is one approach to achieve AI using data-driven learning.",
+        "Deep Learning is a type of ML using neural networks with many layers, often great for images/text.",
+        "NLP (Natural Language Processing) helps computers understand and work with human language.",
+        "Want a simple real-life example (spam detection, recommendations, face recognition)?"
+      ]
+    },
+    {
+      "tag": "ai_ml_interview",
+      "patterns": [
+        "ML interview questions",
+        "How to prepare for ML interview",
+        "Explain overfitting",
+        "What is bias variance",
+        "What is precision and recall",
+        "What is TF IDF"
+      ],
+      "responses": [
+        "For ML interviews: know basics (metrics, overfitting, bias-variance), model intuition, and be able to explain a project end-to-end.",
+        "Overfitting means the model memorizes training data and performs poorly on new data. Fix with more data, regularization, and validation.",
+        "Precision vs Recall: precision is 'how many predicted positives are correct', recall is 'how many actual positives we found'.",
+        "Bias-variance tradeoff: high bias underfits, high variance overfits. Aim for balance with proper model complexity.",
+        "TF-IDF gives higher weight to words that are frequent in a document but rare across documents - useful for text classification."
+      ]
+    },
+    {
+      "tag": "bot_feelings",
+      "patterns": [
+        "I am sad",
+        "I'm sad",
+        "I feel sad",
+        "I am stressed",
+        "I'm stressed",
+        "I am anxious",
+        "I'm anxious",
+        "I feel lonely",
+        "I feel tired"
+      ],
+      "responses": [
+        "I'm sorry you're feeling that way. Want to tell me what's going on?",
+        "That sounds tough. If you want, describe what's bothering you in one sentence.",
+        "I'm here with you. Would you like a small tip, a joke, or just to talk?",
+        "That sounds difficult. I'm listening - what happened?",
+        "If you want, take a slow breath and tell me the main problem in one line."
+      ]
+    },
+    {
+      "tag": "compliment",
+      "patterns": [
+        "You are great",
+        "You're great",
+        "Good job",
+        "Nice",
+        "You are helpful",
+        "You're helpful"
+      ],
+      "responses": [
+        "Thanks! Want to add a new intent or improve responses next?",
+        "Glad I could help. What would you like to do now?",
+        "Thank you! Keep going - you're building something cool.",
+        "That means a lot. What's next?",
+        "Awesome - happy to help!"
+      ]
+    },
+    {
+      "tag": "insult",
+      "patterns": [
+        "You are stupid",
+        "You're stupid",
+        "Bad bot",
+        "You are useless",
+        "You're useless",
+        "You are bad",
+        "Not helpful"
+      ],
+      "responses": [
+        "Sorry about that - tell me what you expected, and I'll try to respond better.",
+        "I'm still learning. Could you rephrase your question?",
+        "Fair feedback. Try 'help' to see what I can answer right now.",
+        "Thanks for the feedback. Tell me what you were trying to do.",
+        "I'll do my best to improve. What question should I answer?"
+      ]
+    },
+    {
+      "tag": "math",
+      "patterns": [
+        "What is 2 + 2",
+        "Calculate 10 * 5",
+        "What is 100 minus 7",
+        "Solve 12 / 3",
+        "Add 5 and 9",
+        "Multiply 6 and 7",
+        "What is 9 squared",
+        "What is 15 divided by 3"
+      ],
+      "responses": [
+        "I can do simple math if you write it like: '2 + 2' or '12 / 3'. What do you want to calculate?",
+        "Try sending a math expression (example: '15 * 3')."
+        ,
+        "For math, send a clear expression like '18 - 4' or '7 * 6'.",
+        "If you type something like '25 / 5', I can help interpret it (this bot is mainly intent-based).",
+        "Want to calculate addition, subtraction, multiplication, or division?"
+      ]
+    },
+    {
+      "tag": "tell_me_more",
+      "patterns": [
+        "Tell me more",
+        "Explain more",
+        "More details",
+        "Can you elaborate",
+        "Why",
+        "Explain",
+        "Can you explain"
+      ],
+      "responses": [
+        "Sure. Tell me which part you want more detail on (preprocessing, TF‑IDF, similarity, or the classifier).",
+        "Happy to. What exactly should I explain?",
+        "Which topic should I expand: college, AI/ML, or how this chatbot works?",
+        "Tell me the exact term you want explained and your level (beginner/intermediate).",
+        "I can explain step-by-step. What should we start with?"
+      ]
+    },
+    {
+      "tag": "hobbies",
+      "patterns": [
+        "What are your hobbies",
+        "What do you like",
+        "What do you do for fun",
+        "Do you have hobbies",
+        "What do you enjoy",
+        "What do you like to do"
+      ],
+      "responses": [
+        "I like turning text into vectors and guessing intents. It's my kind of fun.",
+        "I enjoy helping you practice NLP and building small projects.",
+        "I like learning new patterns from datasets (like intents.json).",
+        "I like answering questions and being tested with new examples.",
+        "I enjoy debugging and making models a bit better each time."
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "Motivate me",
+        "I need motivation",
+        "Give me a quote",
+        "Inspire me",
+        "Encourage me",
+        "I feel lazy",
+        "Help me focus"
+      ],
+      "responses": [
+        "Small steps daily beat big steps rarely. What's one tiny task you can do now?",
+        "You're closer than you think. Want to add 1 new intent and test it?",
+        "Progress > perfection. Keep building!",
+        "Do 10 minutes now. Momentum will carry you forward.",
+        "Pick one task, set a 15-minute timer, and start. You'll feel better after you begin."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [
+        "I don't understand",
+        "Can you repeat",
+        "What do you mean",
+        "I didn't get that",
+        "Unknown"
+      ],
+      "responses": [
+        "I'm not sure I understood that. Try typing 'help' for examples.",
+        "Sorry - I didn't catch that. Could you rephrase?",
+        "I may be missing that intent. Try: 'help', 'time', 'date', 'placements', or 'what is machine learning'.",
+        "Could you rephrase with a bit more detail?",
+        "Try one of these: 'help', 'tell me a joke', 'college timings', 'ML interview questions'."
+      ]
+    }
+  ]
+}
